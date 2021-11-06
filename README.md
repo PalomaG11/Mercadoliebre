@@ -9,7 +9,7 @@
 
 ### Source code
 ```shell
-$ git clone git@github.com:comodinx/MercadoLiebre.git
+$ git clone https://github.com/PalomaG11/Mercadoliebre
 $ cd MercadoLiebre
 $ npm i
 ```
