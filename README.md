@@ -1,31 +1,14 @@
 # Ejercicio - Mercado Liebre
 
-## Index
+* [Pasito a Pasito][pasito_a_pasito].
 
-* [Download][download].
-* [How is it used?][how_is_it_used].
 
-## Download
-
-### Source code
+### PASITO A PASITO
 ```shell
 $ git clone https://github.com/PalomaG11/Mercadoliebre
-$ cd MercadoLiebre
-$ npm i
-```
-
-## How is it used?
-
-### Run
-
-```shell
-# Development - Watch changes
-npm run dev
-
-# Production
-npm start
+$ cd MercadoLiebre para ingresar a la carpeta
+$ npm install para descargar el express y el nodemon
 ```
 
 <!-- deep links -->
-[download]: #download
-[how_is_it_used]: #how-is-it-used
+[pasito_a_pasito]: #pasito-a-pasito
