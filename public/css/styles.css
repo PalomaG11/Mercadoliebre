@@ -43,14 +43,20 @@ body{
     background-color: blue;
     color: white;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 9px;
 }
 
 footer .articulos{
     text-align: center;
+    color: var(--gris-oscuro);
 }
 
 footer .articulos i{
     font-size: 2em;
     margin-bottom: 10px;
+    color:var(--celeste);
+}
+
+.banner{
+    width: 100%;
 }
