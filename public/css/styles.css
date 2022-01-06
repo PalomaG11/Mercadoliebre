@@ -17,6 +17,10 @@
 body{
     font-family: Roboto;
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gris-claro);
 }
 
 header{
@@ -24,12 +28,109 @@ header{
     text-align: center;
 }
 
+.header-logo{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img{
+    width: 50%;
+    padding: 20px;
+}
+.search-bar{
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 30px;
+}
+
+.search-wrap{
+    position: relative;
+    width: 50%;
+    padding: 5px;
+}
+
+.search-wrap input{
+    width: 100%;
+    padding-right: 20px;
+    margin-left: 5px;
+}
+
+.fa-search{
+    background-color:white;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+
+.burger-menu {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.burger-menu i {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.site{
+    display: none;
+}
+
+.login{
+    display: none;
+}
+
+.banner img{
+    width: 100vw;
+}
+
 main{
     text-align: center;
-    width: 90%;
+    width: 90vw;
 }
+
+main section{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
 main article{
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.titulares{
+    font-size: 24px;
+    color:var(--gris-oscuro)
+}
+
+main article img{
+    width: 100%;
+}
+
+.producto-descripcion{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    text-align: left;
+    position:relative;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.bloque-precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .fa-truck{
@@ -46,44 +147,28 @@ main article{
     right: 20px;
     top: -15px;
 }
-.producto-descripcion{
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
-
-.descuento{
-    color: #39b54a
-}
-.titulares{
-    font-size: 24px;
-}
 
 .precio{
-    font-size:18px;
+    font-size: 16px;
+    flex-basis: 30%;
+    margin-right: 5px;
 }
 
 .descuento{
     font-size:16px;
+    color: #39b54a;
+    flex-basis: 70%;
 }
 
-.descripcion{
-    font-size: 16px;
+.product-title{
+    display: none;
 }
 
-.burger-menu {
-    text-align: center;
-}
-
-.burger-menu i {
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    border-radius: 9px;
-}
-
-footer .articulos{
+footer{
+    background:white;
     text-align: center;
     color: var(--gris-oscuro);
+    padding: 20px;
 }
 
 footer .articulos i{
@@ -92,6 +177,95 @@ footer .articulos i{
     color:var(--celeste);
 }
 
-.banner{
-    width: 100%;
+.copyright{
+    padding-top: 15px;
+}
+
+@media (min-width: 361px){
+    .leyenda{
+        align-items: center;
+        display: flex;
+    }
+    .header-logo{
+        flex-basis: 70%;
+        justify-content: space-between;
+    }
+    .header-logo img{
+        padding: 5px;
+    }
+    .search-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fa-search{
+        position: relative;
+        background-color: white;
+        top: 0;
+        right: 0;
+        font-size: 16px;
+        margin-left: 5px;
+        border: 1px solid var(--gris-oscuro);
+        border-radius: 3px;
+        padding: 1.5px;
+    }
+    header aside{
+        flex-basis: 30%;
+    }
+    .listas{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .site{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .site li{
+        padding-left: 5%;
+    }
+    .site li a{
+        text-decoration: none;
+        color: black;
+    }
+    .login{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .login li{
+        text-decoration: none;
+        color: black;
+    }
+    .login li a{
+        text-decoration: none;
+        color: black;
+    }
+    .login li i{
+        padding-left: 5px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+        margin-left: 2.5%;
+    }
+    .product-title{
+        font-size: 16px;
+        color: var(--gris-oscuro);
+        display: block;
+    }
+}
+
+@media (min-width: 769px){
+    main section{
+        padding: 1%;
+    }
+    main article{
+        width: 24%;
+        margin-left: 1%;
+    }
 }
