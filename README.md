@@ -10,5 +10,4 @@ $ cd MercadoLiebre para ingresar a la carpeta
 $ npm install para descargar el express y el nodemon
 ```
 
-<!-- deep links -->
 [pasito_a_pasito]: #pasito-a-pasito

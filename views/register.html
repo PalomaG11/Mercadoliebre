@@ -39,46 +39,56 @@
         </div>
     </header>
     <main>
-        <form action="/register" method="POST">
-        <div>
-            <label>Nombre y apellido</label>
-            <input type="text" name="nombre-apellido">
-        </div>  
-        <div>
-            <label>Nombre de usuario</label>
-            <input type="text" name="nombre-usuario">
-        </div>  
-        <div>
-            <label>Fecha de nacimiento</label>
-            <input type="date" name="fecha" placeholder="mm/dd/yyyy" min="1900/01/01" max="2022/01/01">
-        </div>  
-        <div>
-            <label>Domicilio</label>
-            <input type="text" name="domicilio">
-        </div> 
-            <label>Perfil del usari@</label> 
-        <div>
-            <input type="radio" name="perfil">Comprador/a
-        </div>  
-        <div>
-            <input type="radio" name="perfil">Vendedor/a
-        </div> 
-        <label>Categorias de interes</label>
-        <select name="categorias">
-            <option value="electro">Electro</option>
-            <option value="moda">Moda</option>
-            <option value="hogar">Hogar</option>
-            <option value="jugueteria">Jugueteria</option>
-            <option value="vidaSana">Vida Sana</option>
-        </select>
+        <form id="form-register" action="/register" method="POST">
+            <label>Datos Personales</label>
+            <input type="text" placeholder="Nombre y Apellido" />
+            <input type="text" placeholder="Domicilio" />
+            <input type="email" placeholder="E-mail" />
+            <label>Fecha de Nacimiento</label>
+            <input type="date" placeholder="Fecha de Nacimiento" />
+    
+            <label>Cuenta</label>
+            <input type="text" placeholder="Nombre de usuario" />
+            <input type="password" placeholder="Contraseña" />
+            <input type="password" placeholder="Confirmar contraseña" />
+    
+            <div class="perfil-de-usuario">
+              <label>Perfil de usuario</label>
+              <div class="radio-options">
+                <input type="radio" name="radio" id="comprador" />
+                <label class="soft-label" for="comprador">Comprador</label>
+                <input type="radio" name="radio" id="vendedor" />
+                <label class="soft-label" for="vendedor">Vendedor</label>
+              </div>
+            </div>
+        <div class="register-intereses">
+            <label>Intereses</label>
+            <div>
+              <input class="" type="checkbox" name="" id="electro" />
+              <label class="soft-label" for="electro">Electro</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="moda" />
+              <label class="soft-label" for="moda">Moda</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="hogar" />
+              <label class="soft-label" for="hogar">Hogar</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="jugueteria" />
+              <label class="soft-label" for="jugueteria">Jugueteria</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="vida-sana" />
+              <label class="soft-label" for="vida-sana">Vida Sana</label>
+            </div>
+          </div>  
         <div>
         <label>Foto de usuari@</label>
         <input type="file" name="avatar" accept=".jpg, .pdf" multiple>
         </div>
-        <label>Contraseña</label>
-        <input type="password" name="contraseña">
-        <input type="password" name="confirmacion" placeholder="Confirmar contraseña">
-        <div>
+        <div class="button-register">
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
         </div>
